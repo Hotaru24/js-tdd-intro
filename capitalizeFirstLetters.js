@@ -1,9 +1,9 @@
 const assert = require('assert');
 
 const capitalizeFirstLetters = (input) => {
-  return input.length > 0 ?
-  input.split(' ').map(e => e.charAt(0).toUpperCase() + e.slice(1)).join(' ')
-  : '';
+  return input.length > 0 
+          ? input.split(' ').map(e => e.charAt(0).toUpperCase() + e.slice(1)).join(' ')
+          : '';
 };
 
 // Check that capitalizeFirstLetters transforms multy words correctly
